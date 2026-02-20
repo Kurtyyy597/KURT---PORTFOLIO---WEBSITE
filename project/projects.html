@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="img/png" href="../../Images/kurtlogo.png" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>Projects - Kurt Allen A. Marquez</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="name-logo" href="/index.html" aria-label="Go to homepage">Kurt<span>.</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="../about/about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="../assets/Kurt_Allen_Marquez_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="../contact/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="projects-hero-v2">
+      <div class="container projects-hero-wrap">
+        <div class="projects-hero-left">
+          <p class="badge"><i class="fa-solid fa-laptop-code"></i> Projects</p>
+
+          <h1 class="page-title">
+            Projects that are responsive, modern, and built to ship.
+          </h1>
+
+          <p class="lead">
+            Click any project image to zoom. Use filters to quickly sort projects.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Browse Projects <i class="fa-solid fa-arrow-down"></i></a>
+            <a class="btn ghost" href="../contact/contact.html">Let’s Talk <i class="fa-solid fa-paper-plane"></i></a>
+          </div>
+
+          <div class="stack-line">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">React</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Git/GitHub</span>
+          </div>
+        </div>
+
+        <aside class="projects-hero-right">
+          <div class="filters-card">
+            <div class="filters-head">
+              <h3>Filter Projects</h3>
+              <p class="muted">Tap a category to filter.</p>
+            </div>
+
+            <div class="filter-row" aria-label="Project filters">
+              <button class="pill is-active" data-filter="all">
+                <i class="fa-solid fa-layer-group"></i> All
+              </button>
+
+              <button class="pill" data-filter="htmlcss">
+                <i class="fa-solid fa-code"></i> HTML/CSS
+              </button>
+
+              <button class="pill" data-filter="javascript">
+                <i class="fa-brands fa-js"></i> JavaScript
+              </button>
+
+              <button class="pill" data-filter="react">
+                <i class="fa-brands fa-react"></i> React.js
+              </button>
+
+              <button class="pill" data-filter="reactnative">
+                <i class="fa-brands fa-react"></i> React Native
+              </button>
+
+              <button class="pill" data-filter="fastapi">
+                <i class="fa-solid fa-server"></i> FastAPI
+              </button>
+
+              <button class="pill" data-filter="postgres">
+                <i class="fa-solid fa-database"></i> PostgreSQL
+              </button>
+
+              <button class="pill" data-filter="uiux">
+                <i class="fa-solid fa-pen-nib"></i> UI/UX
+              </button>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="filters-tip">
+              <i class="fa-regular fa-lightbulb"></i>
+              <p class="muted">Click the project image to zoom in/out. Works on mobile too.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Clean cards, strong typography, mobile-first layouts.</p>
+        </div>
+
+        <div class="project-grid-v2" id="projectGrid" aria-live="polite">
+
+          <!-- 1 -->
+          <article class="p-card" data-tags="htmlcss javascript uiux">
+            <div class="p-media">
+              <img class="zoomable" src="../images/gym-preview.png" alt="Gym Website preview" />
+              <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to zoom</span>
+            </div>
+
+            <div class="p-body">
+              <div class="p-top">
+                <h3 class="p-title">Gym Website</h3>
+                <p class="p-desc">Modern responsive gym website with structured layout and interactive components.</p>
+              </div>
+
+              <div class="p-tech">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">Responsive</span>
+              </div>
+
+              <div class="p-actions">
+                <a class="btn ghost" href="https://alphalab-website.vercel.app/" target="_blank" rel="noopener">
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a class="btn primary" href="https://github.com/Kurtyyy597/ALPHALAB-WEBSITE" target="_blank" rel="noopener">
+                  Source <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="p-card" data-tags="react fastapi postgres javascript uiux">
+            <div class="p-media">
+              <img class="zoomable" src="../images/crud-preview.png" alt="Car CRUD System preview" />
+              <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to zoom</span>
+            </div>
+
+            <div class="p-body">
+              <div class="p-top">
+                <h3 class="p-title">Car CRUD System</h3>
+                <p class="p-desc">
+                  Full-stack car inventory platform featuring authentication, scalable backend architecture, and cloud-based image handling.
+                </p>
+              </div>
+
+              <div class="p-tech">
+                <span class="chip">React + TS</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">Auth</span>
+              </div>
+
+              <div class="p-actions">
+                <a class="btn ghost" href="https://car-inventory-frontend-orcin.vercel.app/" target="_blank" rel="noopener">
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a class="btn primary" href="https://github.com/Kurtyyy597/car-inventory-frontend" target="_blank" rel="noopener">
+                  Source <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="p-card" data-tags="htmlcss javascript uiux">
+            <div class="p-media">
+              <img class="zoomable" src="../images/portfolio-preview.png" alt="Portfolio Website preview" />
+              <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to zoom</span>
+            </div>
+
+            <div class="p-body">
+              <div class="p-top">
+                <h3 class="p-title">Personal Portfolio Website</h3>
+                <p class="p-desc">
+                  Built with HTML & CSS featuring responsive design, project showcases, and modern UI layout.
+                </p>
+              </div>
+
+              <div class="p-tech">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">UI</span>
+              </div>
+
+              <div class="p-actions">
+                <a class="btn ghost" href="https://your-portfolio-live-demo.vercel.app/" target="_blank" rel="noopener">
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a class="btn primary" href="https://github.com/Kurtyyy597" target="_blank" rel="noopener">
+                  Source <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="p-card" data-tags="reactnative javascript uiux">
+            <div class="p-media">
+              <img class="zoomable" src="../images/Rolex-Preview.jpg" alt="Rolex Mini E-Commerce preview" />
+              <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to zoom</span>
+            </div>
+
+            <div class="p-body">
+              <div class="p-top">
+                <h3 class="p-title">Rolex Mini E-Commerce</h3>
+                <p class="p-desc">
+                  Mobile e-commerce app showcasing product selection, validation, and complete order workflow.
+                </p>
+              </div>
+
+              <div class="p-tech">
+                <span class="chip">React Native</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">E-commerce</span>
+              </div>
+
+              <div class="p-actions">
+                <a class="btn ghost" href="https://drive.google.com/drive/folders/1eK8ysvRdR4qxnAw5L-qdtKlh5yObelAl" target="_blank" rel="noopener">
+                  Video / Demo <i class="fa-solid fa-play"></i>
+                </a>
+                <a class="btn primary" href="https://github.com/Kurtyyy597/React-Native-E-Commerce-Mini-Rolex" target="_blank" rel="noopener">
+                  Source <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="p-card" data-tags="reactnative javascript uiux">
+            <div class="p-media">
+              <img class="zoomable" src="../images/Shoppee-Preview.jpg" alt="MiniShoppee E-Commerce preview" />
+              <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to zoom</span>
+            </div>
+
+            <div class="p-body">
+              <div class="p-top">
+                <h3 class="p-title">MiniShoppee E-Commerce</h3>
+                <p class="p-desc">
+                  React Native + TypeScript app inspired by Shopee with dynamic pricing and interactive UI patterns.
+                </p>
+              </div>
+
+              <div class="p-tech">
+                <span class="chip">React Native</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">UI Patterns</span>
+              </div>
+
+              <div class="p-actions">
+                <a class="btn ghost" href="https://drive.google.com/drive/folders/1IkJJO564dgAf7RtowekGknQiQh7Nfv4f" target="_blank" rel="noopener">
+                  Video / Demo <i class="fa-solid fa-play"></i>
+                </a>
+                <a class="btn primary" href="https://github.com/Kurtyyy597/React-Native-E-Commerce-Mini-Rolex" target="_blank" rel="noopener">
+                  Source <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Empty state -->
+        <div class="empty-state" id="emptyState" hidden>
+          <div class="empty-card">
+            <i class="fa-regular fa-face-meh"></i>
+            <h3>No projects found</h3>
+            <p class="muted">Try switching filters.</p>
+          </div>
+        </div>
+
+        <!-- Load More -->
+        <div class="load-more-wrap">
+          <button class="btn ghost load-more" id="loadMoreBtn" type="button">
+            Load more <i class="fa-solid fa-angles-down"></i>
+          </button>
+          <p class="muted load-hint" id="loadHint"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX (for image zoom) -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-close="true"></div>
+      <button class="lightbox-close" type="button" data-close="true" aria-label="Close zoom">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightboxImg" alt="Zoomed project image" />
+      <p class="lightbox-tip muted">Click anywhere to close.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Kurt Allen A. Marquez | Built with HTML, CSS & JavaScript</p>
+      <a class="back-to-top" href="#">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="project.js"></script>
+</body>
+</html>

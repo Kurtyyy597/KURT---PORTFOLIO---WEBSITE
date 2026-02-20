@@ -1,0 +1,88 @@
+<!-- thank-you.html (Modern + Mobile Responsive + Glow + Back to Contact) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="img/png" href="../../Images/kurtlogo.png" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>Thank You - Kurt Allen A. Marquez</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="thankyou">
+    <!-- extra glow layer just for this page -->
+    <div class="ty-glow" aria-hidden="true"></div>
+
+    <div class="container thankyou-wrap">
+      <div class="thankyou-card">
+        <div class="ty-icon" aria-hidden="true">
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <p class="badge"><i class="fa-solid fa-sparkles"></i> Success</p>
+
+        <h1>Message Sent!</h1>
+        <p class="muted ty-lead">
+          Thanks for reaching out — I’ll reply as soon as I can.
+        </p>
+
+        <div class="ty-actions">
+          <a class="btn primary" href="/index.html">
+            Back Home <i class="fa-solid fa-house"></i>
+          </a>
+
+          <a class="btn ghost" href="/projects/projects.html">
+            View Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a class="btn ghost" href="/contact/contact.html">
+            Back to Contact <i class="fa-solid fa-rotate-left"></i>
+          </a>
+        </div>
+
+        <div class="ty-meta">
+          <p class="muted small">
+            Redirecting to home in <span id="count">10</span>s…
+          </p>
+          <button class="ty-cancel" id="cancelRedirect" type="button">
+            Stay here
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Countdown redirect with "Stay here" cancel
+    let n = 10;
+    const count = document.getElementById("count");
+    const cancelBtn = document.getElementById("cancelRedirect");
+
+    const timer = setInterval(() => {
+      n--;
+      if (count) count.textContent = n;
+      if (n <= 0) {
+        clearInterval(timer);
+        window.location.href = "/index.html";
+      }
+    }, 1000);
+
+    cancelBtn?.addEventListener("click", () => {
+      clearInterval(timer);
+      cancelBtn.textContent = "Redirect paused";
+      cancelBtn.disabled = true;
+    });
+  </script>
+</body>
+</html>

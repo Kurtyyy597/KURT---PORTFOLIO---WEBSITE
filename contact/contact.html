@@ -1,0 +1,242 @@
+<!-- ===============================
+     contact.html (Formspree version)
+     - Modern dark theme
+     - Honeypot anti-spam
+     - Success animation + toast
+     - Mobile responsive
+     =============================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="img/png" href="../../Images/kurtlogo.png" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>Contact - Kurt Allen A. Marquez</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="name-logo" href="/index.html" aria-label="Go to homepage">Kurt<span>.</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="../about/about.html">About</a>
+        <a href="../projects/projects.html">Projects</a>
+        <a href="../assets/Kurt_Allen_Marquez_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="contact-hero-v2">
+      <div class="container contact-hero-grid-v2">
+        <div class="contact-left">
+          <p class="badge"><i class="fa-solid fa-paper-plane"></i> Contact</p>
+
+          <h1 class="page-title">
+            Let’s build something clean, modern, and responsive.
+          </h1>
+
+          <p class="lead">
+            Send a message below — it goes straight to my inbox via Formspree.
+            No login, no friction.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#contactForm">Send a Message <i class="fa-solid fa-arrow-down"></i></a>
+            <a class="btn ghost" href="../projects/projects.html">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="contact-bento">
+            <div class="bento-card">
+              <div class="bento-ic"><i class="fa-solid fa-at"></i></div>
+              <div>
+                <p class="bento-title">Email</p>
+                <p class="bento-value" id="emailText">kurtmarquez238@gmail.com</p>
+              </div>
+              <button class="bento-action" type="button" id="copyEmailBtn" aria-label="Copy email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <a class="bento-card link" href="https://www.linkedin.com/in/marquez-kurt-allen-6697b1382/" target="_blank" rel="noopener">
+              <div class="bento-ic"><i class="fa-brands fa-linkedin"></i></div>
+              <div>
+                <p class="bento-title">LinkedIn</p>
+                <p class="bento-value">Connect with me</p>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square bento-go"></i>
+            </a>
+
+            <a class="bento-card link" href="https://github.com/Kurtyyy597" target="_blank" rel="noopener">
+              <div class="bento-ic"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <p class="bento-title">GitHub</p>
+                <p class="bento-value">See my code</p>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square bento-go"></i>
+            </a>
+
+            <a class="bento-card link" href="https://www.instagram.com/kurtyisqt/" target="_blank" rel="noopener">
+              <div class="bento-ic"><i class="fa-brands fa-instagram"></i></div>
+              <div>
+                <p class="bento-title">Instagram</p>
+                <p class="bento-value">@kurtyisqt</p>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square bento-go"></i>
+            </a>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item"><i class="fa-solid fa-shield"></i><span>Spam-protected</span></div>
+            <div class="trust-item"><i class="fa-solid fa-bolt"></i><span>Fast replies</span></div>
+            <div class="trust-item"><i class="fa-solid fa-mobile-screen"></i><span>Mobile-first UI</span></div>
+          </div>
+        </div>
+
+        <!-- FORM PANEL -->
+        <aside class="contact-right" id="contactForm">
+          <div class="contact-panel-v2">
+            <div class="panel-head">
+              <h2 class="section-title">Send me a message</h2>
+             </div>
+
+           
+            <form
+              class="contact-form-v2"
+              id="contactFormEl"
+              action="https://formspree.io/f/xwvnnqng"
+              method="POST"
+              novalidate
+            >
+              <!-- Honeypot (anti-spam) -->
+              <div class="hp-field" aria-hidden="true">
+                <label for="company">Company</label>
+                <input type="text" name="company" id="company" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <!-- Optional Formspree subject -->
+              <input type="hidden" name="_subject" value="Portfolio Contact — New Message" />
+              <input type="hidden" name="_next" value="/thank-you.html" />
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="name">Your Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+                  <small class="field-hint" data-hint="name"></small>
+                </div>
+
+                <div class="field">
+                  <label for="email">Your Email</label>
+                  <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
+                  <small class="field-hint" data-hint="email"></small>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic" required>
+                  <option value="" selected disabled>Choose one…</option>
+                  <option value="Collaboration">Collaboration</option>
+                  <option value="Project Request">Project Request</option>
+                  <option value="Question">Question</option>
+                  <option value="Opportunity">Opportunity</option>
+                </select>
+                <small class="field-hint" data-hint="topic"></small>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell me about your idea..." required></textarea>
+                <small class="field-hint" data-hint="message"></small>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn primary" id="submitBtn" type="submit">
+                  Send Message <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+                <a class="btn ghost"
+                   href="https://mail.google.com/mail/?view=cm&fs=1&to=kurtmarquez238@gmail.com"
+                   target="_blank" rel="noopener">
+                  Open Gmail <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <p class="muted small">
+                Prefer email? <a class="inline-link" href="mailto:kurtmarquez238@gmail.com">kurtmarquez238@gmail.com</a>
+              </p>
+
+              <!-- Success UI (hidden until success) -->
+              <div class="success-card" id="successCard" hidden>
+                <div class="success-ic">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                  <h3>Thankyou for messaging </h3>
+                  <p class="muted"> I’ll reply as soon as I can.</p>
+                </div>
+                <button class="btn ghost small-btn" id="sendAnotherBtn" type="button">
+                  Send another <i class="fa-solid fa-rotate"></i>
+                </button>
+              </div>
+            </form>
+
+            <div class="contact-mini">
+              <div class="mini">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <p class="mini-title">Location</p>
+                  <p class="mini-text">Philippines (open to remote)</p>
+                </div>
+              </div>
+
+              <div class="mini">
+                <i class="fa-solid fa-bolt"></i>
+                <div>
+                  <p class="mini-title">Response</p>
+                  <p class="mini-text">Usually within 24 hours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" aria-live="polite" aria-atomic="true" hidden>
+      <i class="fa-solid fa-check"></i>
+      <span id="toastText">Done!</span>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Kurt Allen A. Marquez | Built with HTML, CSS & JavaScript</p>
+      <a class="back-to-top" href="#">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>

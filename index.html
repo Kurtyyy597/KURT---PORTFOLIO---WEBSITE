@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="img/png" href="../../Images/kurtlogo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio - Kurt Allen A. Marquez</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+  <!-- Decorative background glow -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="name-logo" href="index.html" aria-label="Go to homepage">Kurt<span>.</span></a>
+
+      <!-- Mobile nav toggle (CSS-only) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="./about/about.html">About</a>
+        <a href="./project/projects.html">Projects</a>
+        <a href="./assets/Kurt_Allen_Marquez_Resume.pdf">Resume</a>
+        <a href="./contact/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge">
+            <i class="fa-solid fa-bolt"></i>
+            Available for collaboration
+          </p>
+
+          <h1 class="intro-name">
+            Hi, I’m
+          <span class="glitch" data-text="Kurt Allen A. Marquez">Kurt Allen A. Marquez</span>
+          </h1>
+
+          <h2 class="intro-sub">Aspiring Web Developer</h2>
+
+          <p class="introduction">
+            I build modern, responsive, and user-friendly websites. I’m passionate about clean UI,
+            accessible layouts, and turning ideas into interactive experiences. I love learning new tools,
+            solving problems, and shipping polished front-end work.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="projects.html">
+              View Projects <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="btn ghost" href="#resume">
+              Resume <i class="fa-regular fa-file-pdf"></i>
+            </a>
+          </div>
+
+          <div class="quick-stats" aria-label="Quick stats">
+            <div class="stat">
+              <p class="stat-num">Modern UI</p>
+              <p class="stat-label">Clean layouts</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">Responsive</p>
+              <p class="stat-label">Mobile-first</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">Fast learner</p>
+              <p class="stat-label">Always improving</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-image-wrap">
+            <img class="img" src="./images/kurt-png.png"       alt="Portrait of Kurt Allen A. Marquez" />
+          </div>
+
+          <div class="hero-mini">
+            <div class="mini-row">
+              <span class="dot"></span>
+              <p>Currently focused on HTML, CSS, JavaScript, React, Python Fast API, and Postgre Sql</p>
+            </div>
+            <div class="mini-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Philippines (open to remote)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h3 class="section-title">What I Bring</h3>
+          <p class="section-subtitle">
+            A mix of design thinking + practical coding to build websites that look good and work well.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h4>Modern UI</h4>
+            <p>Clean spacing, strong typography, and polished layouts — optimized for readability.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h4>Responsive First</h4>
+            <p>Built to look great on phones, tablets, and desktops with a mobile-first approach.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+            <h4>Clean Code</h4>
+            <p>Organized structure, reusable styles, and maintainable components for future scaling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY WORK WITH ME (improved) -->
+    <section class="section">
+      <div class="container split">
+        <div class="panel">
+          <h3 class="section-title">Why Work With Me?</h3>
+          <p class="section-subtitle">
+            I care about building real-world solutions — not just “pretty pages.”
+          </p>
+
+          <ul class="checklist">
+            <li><i class="fa-solid fa-check"></i> Strong foundation in modern web development</li>
+            <li><i class="fa-solid fa-check"></i> Passionate about clean, responsive UI</li>
+            <li><i class="fa-solid fa-check"></i> Fast learner and team player</li>
+            <li><i class="fa-solid fa-check"></i> Focused on practical, user-friendly solutions</li>
+          </ul>
+
+          <div class="inline-actions">
+            <a class="btn ghost" href="about.html">More About Me</a>
+            <a class="btn primary" href="#contact">Let’s Talk</a>
+          </div>
+        </div>
+
+        <aside class="panel highlight">
+          <h4 class="highlight-title">Tech I’m Using</h4>
+          <div class="chips" aria-label="Tech stack">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Responsive Design</span>
+            <span class="chip">Git/GitHub</span>
+            <span class="chip">UI/UX Basics</span>
+          </div>
+
+          <div class="divider"></div>
+
+          <h4 class="highlight-title">Currently Learning</h4>
+          <p class="muted">
+            Improving JavaScript fundamentals and building more interactive projects.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- RESUME SECTION (preview + download PDF) -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="section-head">
+          <h3 class="section-title">Resume</h3>
+          <p class="section-subtitle">
+            Preview my resume below or download the PDF.
+          </p>
+        </div>
+
+        <div class="resume-grid">
+          <div class="resume-actions">
+            <a class="btn primary" href="./assets/Kurt_Allen_Marquez_Resume.pdf" download>
+              Download PDF <i class="fa-solid fa-download"></i>
+            </a>
+            <a class="btn ghost" href="./assets/Kurt_Allen_Marquez_Resume.pdf" target="_blank" rel="noopener">
+              Open in New Tab <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+
+            <div class="resume-tip">
+              <i class="fa-regular fa-lightbulb"></i>
+              <p class="muted">
+                Tip: If the preview doesn’t load on some phones, use “Open in New Tab”.
+              </p>
+            </div>
+          </div>
+
+          <div class="resume-viewer" role="region" aria-label="Resume PDF preview">
+            <iframe
+              src="assets/Kurt_Allen_Marquez_Resume.pdf"
+              title="Kurt Allen A. Marquez Resume"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / SOCIAL -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h3 class="section-title">Connect With Me</h3>
+          <p class="section-subtitle">
+            I’m open for collaborations and opportunities to grow as a developer.
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/Kurtyyy597" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/marquez-kurt-allen-6697b1382/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="https://www.facebook.com/starboydoe33/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kurtmarquez238@gmail.com" target="_blank" rel="noopener">
+            <i class="fa-solid fa-at"></i>
+            <span>Email</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="https://www.instagram.com/kurtyisqt/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Kurt Allen A. Marquez | Built with HTML & CSS</p>
+      <a class="back-to-top" href="#">
+        Back to top <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="index.js"> </script>
+</body>
+</html>
